@@ -20,5 +20,12 @@ spring:
     url: jdbc:mysql://localhost:3306/studyapplication?createDatabaseIfNotExist=true&serverTimezone=UTC
     username: root
     password: 'admin'
+  jpa:
+    generate-ddl: true #to create tables
+    hibernate:
+      ddl-auto: create #to always drop and create tables
+  
+    
+    
       
       
