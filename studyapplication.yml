@@ -13,4 +13,10 @@ eureka:
     server:
       wait-time-in-ms-when-sync-empty: 3000
       
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/studyapplication?createDatabaseIfNotExist=true&serverTimezone=UTC
+    username: root
+    password: admin
+      
       
