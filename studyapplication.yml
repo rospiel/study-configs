@@ -21,6 +21,7 @@ spring:
     username: root
     password: 'admin'
   jpa:
+    show-sql: true
     generate-ddl: true #to create tables
     hibernate:
       ddl-auto: create #to always drop and create tables
