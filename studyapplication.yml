@@ -27,7 +27,7 @@ spring:
       ddl-auto: create #to always drop and create tables
     properties:
       hibernate:
-        dialect:: org.hibernate.dialect.MySQL57Dialect
+        dialect: org.hibernate.dialect.MySQL57Dialect
   
     
     
