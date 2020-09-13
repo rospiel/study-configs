@@ -17,5 +17,6 @@ zuul:
   routes:
     studyapplication:
       path: /kitchens/**
+      path: /states/**
       serviceId: studyapplication
       strip-prefix: false
