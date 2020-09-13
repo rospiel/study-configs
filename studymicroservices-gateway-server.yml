@@ -15,8 +15,11 @@ eureka:
 zuul:
   prefix: /api
   routes:
-    studyapplication:
+    kitchen:
       path: /kitchens/**
-      path: /states/**
       serviceId: studyapplication
       strip-prefix: false
+    state:
+      path: /states/**
+      serviceId: studyapplication
+      strip-prefix: false  
