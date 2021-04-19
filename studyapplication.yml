@@ -46,6 +46,12 @@ spring:
     deserialization:
       fail-on-unknown-properties: true #when we decide not accept properties passed in the request that not exist
       fail-on-ignored-properties: true #when we decide not accept properties passed in the request that exist but ignored
+  data:
+    web:
+      pageable:
+        size-parameter: registros
+        
+      
               
   
     
