@@ -50,6 +50,10 @@ spring:
     web:
       pageable:
         size-parameter: registros
+studyapplication:
+  storage:
+    local:
+      photos: /home/rodrigo/Pictures/study
         
       
               
