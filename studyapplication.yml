@@ -55,8 +55,8 @@ studyapplication:
     local:
       photos: /home/rodrigo/Pictures/study
     s3:  
-      access-key: ~
-      access-secret: ~
+      access-key: 1
+      access-secret: 1
       bucket: studyapplication-test
       region: us-east-1
       directory: files
