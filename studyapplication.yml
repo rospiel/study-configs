@@ -50,13 +50,16 @@ spring:
     web:
       pageable:
         size-parameter: registros
+  cloud:
+    config:
+      allowOverride: true
 studyapplication:
   storage:
     local:
       photos: /home/rodrigo/Pictures/study
     s3:  
-      access-key: 1
-      access-secret: 1
+      access-key: ~
+      access-secret: ~
       bucket: studyapplication-test
       region: us-east-1
       directory: files
