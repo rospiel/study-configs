@@ -50,11 +50,9 @@ spring:
     web:
       pageable:
         size-parameter: registros
-  cloud:
-    config:
-      allowOverride: true
 studyapplication:
   storage:
+    storageType: local
     local:
       photos: /home/rodrigo/Pictures/study
     s3:  
