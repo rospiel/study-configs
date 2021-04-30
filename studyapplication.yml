@@ -52,7 +52,7 @@ spring:
         size-parameter: registros
 studyapplication:
   storage:
-    storageType: s3
+    storageType: local
     local:
       photos: /home/rodrigo/Pictures/study
     s3:  
