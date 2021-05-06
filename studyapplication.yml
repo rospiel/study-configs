@@ -50,11 +50,14 @@ spring:
     web:
       pageable:
         size-parameter: registros
+  
   mail:
-    host: smtp.sendgrid.net
-    port: 587
-    username: apikey
-    password: ~
+    sendgrid:
+      host: smtp.sendgrid.net
+      port: 587
+      username: apikey
+      password: ~
+      sender: StudyApplication <notreply@studyapplication.com.br>
 studyapplication:
   storage:
     storageType: local
@@ -66,3 +69,5 @@ studyapplication:
       bucket: studyapplication-test
       region: us-east-1
       directory: files
+  mail:
+    service: sendgrid
