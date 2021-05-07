@@ -84,4 +84,4 @@ studyapplication:
       region: us-east-1
       directory: files
   mail:
-    service: sendgrid
+    service: gmail
