@@ -64,14 +64,9 @@ spring:
       username: ~
       password: ~
       protocol: smtp
-      properties:
-        mail:
-          smtp:
-            auth: true
-            starttls:
-              enable: true
-            ssl:
-              trust: smtp.gmail.com  
+      properties-mail-smtp-auth: true
+      properties-mail-smtp-starttls-enable: true
+      properties-mail-smtp-ssl-trust: smtp.gmail.com  
 studyapplication:
   storage:
     storageType: local
