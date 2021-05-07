@@ -58,6 +58,20 @@ spring:
       username: apikey
       password: ~
       sender: StudyApplication <notreply@studyapplication.com.br>
+    gmail:
+      host: smtp.gmail.com
+      port: 587
+      username: ~
+      password: ~
+      protocol: smtp
+      properties:
+        mail:
+          smtp:
+            auth: true
+            starttls:
+              enable: true
+            ssl:
+              trust: smtp.gmail.com  
 studyapplication:
   storage:
     storageType: local
