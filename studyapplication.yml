@@ -14,6 +14,24 @@ eureka:
       wait-time-in-ms-when-sync-empty: 3000
       
 spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          studyapplication:
+            client-id: studyapplication
+            client-secret: secret
+            client-name: Study Application
+            scope: user_info
+            redirect-uri: http://
+            client-authentication-method: basic
+            authorization-grant-type: authorization_code
+        provider:
+          keycloak-provider:
+            authorization-uri: http://localhost:9093/auth/oauth/authorize
+            token-uri: http://localhost:9093/auth/oauth/token
+            user-info-uri: http://localhost:9093/auth/userinfo
+            user-name-attribute: username
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     platform: mysql
