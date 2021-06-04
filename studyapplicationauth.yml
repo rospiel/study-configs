@@ -1,6 +1,7 @@
-
 server:
   port: 9093
+  servlet:
+    context-path: /auth
   
 eureka:
   instance:
